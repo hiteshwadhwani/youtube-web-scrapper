@@ -35,15 +35,8 @@ def save_to_sql(user, password, data, table_name):
 
     try:
         df = pd.DataFrame(data)
-        df.to_json(f"{table_name}.json", indent=False)
         df.drop("comments", axis=1, inplace=True)
         df.to_sql(f"{table_name}", con=db_connection, index=False)
     except Exception as e:
         logging_file.error(f"Exception in DataFrame {e}")
 
-    # now save data to mongoDB
-    try:
-        store_data(table_name)
-        logging_file.info(f"Data stored in mongoDB {table_name}")
-    except Exception as e:
-        logging_file.error(f"Exception with mongoDB {e}")
