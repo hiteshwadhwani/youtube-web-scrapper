@@ -60,6 +60,9 @@ def success():
 def image_URL(name_to_search, number_of_links):
     ser = Service(os.environ.get("CHROMEDRIVER_PATH"))
     op = webdriver.ChromeOptions()
+    op.add_argument("--headless")
+    op.add_argument("--disable-dev-shm-usage")
+    op.add_argument("--no-sandbox")
     op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
     driver = webdriver.Chrome(service=ser, options=op)
     url = "https://www.youtube.com/results?search_query={}"
