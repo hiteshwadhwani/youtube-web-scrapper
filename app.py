@@ -59,7 +59,9 @@ def image_URL(name_to_search, number_of_links, download_video):
     url = "https://www.youtube.com/results?search_query={}"
     name = name_to_search.replace(" ", "+")
     driver.get(url.format(name))
+    time.sleep(5)
     user_url = driver.find_element(By.ID, "main-link").get_attribute("href")
+    time.sleep(5)
     driver.get(user_url + "/videos")
 
     def scroll_down():
