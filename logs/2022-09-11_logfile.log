@@ -1,0 +1,112 @@
+11:14:14 AM Some visited website
+11:14:14 AM 127.0.0.1 - - [11/Sep/2022 11:14:14] "GET / HTTP/1.1" 200 -
+11:14:14 AM 127.0.0.1 - - [11/Sep/2022 11:14:14] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:14:14 AM 127.0.0.1 - - [11/Sep/2022 11:14:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+11:14:37 AM directory /videos reset
+11:16:32 AM user searched for krish naik and he wants 4 videos
+11:16:32 AM 127.0.0.1 - - [11/Sep/2022 11:16:32] "POST /success HTTP/1.1" 200 -
+11:54:22 AM Some visited website
+11:54:22 AM 127.0.0.1 - - [11/Sep/2022 11:54:22] "GET / HTTP/1.1" 200 -
+11:54:22 AM 127.0.0.1 - - [11/Sep/2022 11:54:22] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:55:02 AM user searched for Indian army and he wants 2 videos
+11:55:02 AM directory /videos reset
+11:55:10 AM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\main.py", line 39, in success
+    urls = image_URL(name, number_of_videos, download_video)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\main.py", line 55, in image_URL
+    user_url = driver.find_element(By.ID, "main-link").get_attribute("href")
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 855, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="main-link"]"}
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00EB78B3+2193587]
+	Ordinal0 [0x00E50681+1771137]
+	Ordinal0 [0x00D641A8+803240]
+	Ordinal0 [0x00D924A0+992416]
+	Ordinal0 [0x00D9273B+993083]
+	Ordinal0 [0x00DBF7C2+1177538]
+	Ordinal0 [0x00DAD7F4+1103860]
+	Ordinal0 [0x00DBDAE2+1170146]
+	Ordinal0 [0x00DAD5C6+1103302]
+	Ordinal0 [0x00D877E0+948192]
+	Ordinal0 [0x00D886E6+952038]
+	GetHandleVerifier [0x01160CB2+2738370]
+	GetHandleVerifier [0x011521B8+2678216]
+	GetHandleVerifier [0x00F417AA+512954]
+	GetHandleVerifier [0x00F40856+509030]
+	Ordinal0 [0x00E5743B+1799227]
+	Ordinal0 [0x00E5BB68+1817448]
+	Ordinal0 [0x00E5BC55+1817685]
+	Ordinal0 [0x00E65230+1856048]
+	BaseThreadInitThunk [0x75C46739+25]
+	RtlGetFullPathName_UEx [0x77A790AF+1215]
+	RtlGetFullPathName_UEx [0x77A7907D+1165]
+
+11:55:10 AM 127.0.0.1 - - [11/Sep/2022 11:55:10] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+11:55:53 AM user searched for adgpi indian army and he wants 2 videos
+11:55:53 AM directory /videos reset
+11:57:23 AM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000001E95CD2E1C0>
+11:57:25 AM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+11:57:26 AM MongoClient(host=['ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+11:57:26 AM Data stored in mongoDB adgpi_indian_army
+11:57:26 AM 127.0.0.1 - - [11/Sep/2022 11:57:26] "POST /success HTTP/1.1" 200 -
+12:31:04 PM Some visited website
+12:31:04 PM 127.0.0.1 - - [11/Sep/2022 12:31:04] "GET / HTTP/1.1" 200 -
+12:31:04 PM 127.0.0.1 - - [11/Sep/2022 12:31:04] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+12:31:20 PM user searched for krish naik and he wants 0 videos
+12:31:20 PM directory /videos reset
+12:31:36 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x0000028FDD1205E0>
+12:31:36 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+12:31:36 PM Exception in DataFrame "['comments'] not found in axis"
+12:31:36 PM MongoClient(host=['ineuron-shard-00-01.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+12:31:37 PM Data stored in mongoDB krish_naik
+12:31:37 PM 127.0.0.1 - - [11/Sep/2022 12:31:37] "POST /success HTTP/1.1" 200 -
+12:34:47 PM Some visited website
+12:34:47 PM 127.0.0.1 - - [11/Sep/2022 12:34:47] "GET / HTTP/1.1" 200 -
+12:34:48 PM 127.0.0.1 - - [11/Sep/2022 12:34:48] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+12:34:58 PM user searched for krish naik and he wants 1 videos
+12:34:58 PM directory /videos reset
+12:35:31 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000002246D2C0820>
+12:35:32 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+12:35:32 PM MongoClient(host=['ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+12:35:33 PM Data stored in mongoDB krish_naik
+12:35:33 PM 127.0.0.1 - - [11/Sep/2022 12:35:33] "POST /success HTTP/1.1" 200 -
+12:41:18 PM Some visited website
+12:41:18 PM 127.0.0.1 - - [11/Sep/2022 12:41:18] "GET / HTTP/1.1" 200 -
+12:41:18 PM 127.0.0.1 - - [11/Sep/2022 12:41:18] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+12:41:27 PM user searched for krish naik and he wants 1 videos
+12:41:27 PM directory /videos reset
+12:42:00 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000001620441E5E0>
+12:42:00 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+12:42:00 PM MongoClient(host=['ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+12:42:01 PM Data stored in mongoDB krish_naik
+12:42:01 PM 127.0.0.1 - - [11/Sep/2022 12:42:01] "POST /success HTTP/1.1" 200 -
+12:59:40 PM Some visited website
+12:59:40 PM 127.0.0.1 - - [11/Sep/2022 12:59:40] "GET / HTTP/1.1" 200 -
+12:59:41 PM 127.0.0.1 - - [11/Sep/2022 12:59:41] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+12:59:50 PM user searched for krish naik and he wants 1 videos
+12:59:50 PM directory /videos reset
+01:00:28 PM Quick CheatSheet To Prepare For Statistics For Data Analyst And Data Scientist not found S3 Bucket An error occurred (404) when calling the HeadObject operation: Not Found
+01:00:37 PM Video Downloaded for URL https://www.youtube.com/watch?v=ITyGQpyMV_w
+01:00:44 PM Quick CheatSheet To Prepare For Statistics For Data Analyst And Data Scientist.mp4 uploaded in S3 Bucket
+01:00:44 PM URL Created for Quick CheatSheet To Prepare For Statistics For Data Analyst And Data Scientist.mp4
+01:00:46 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000001BA21EDFF70>
+01:00:46 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+01:00:47 PM MongoClient(host=['ineuron-shard-00-01.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+01:00:47 PM Data stored in mongoDB krish_naik
+01:00:47 PM 127.0.0.1 - - [11/Sep/2022 13:00:47] "POST /success HTTP/1.1" 200 -
