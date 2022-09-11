@@ -135,3 +135,48 @@ Backtrace:
 02:08:03 PM MongoClient(host=['ineuron-shard-00-01.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
 02:08:04 PM Data stored in mongoDB krish_naik
 02:08:04 PM 127.0.0.1 - - [11/Sep/2022 14:08:04] "POST /success HTTP/1.1" 200 -
+02:27:37 PM Some visited website
+02:27:37 PM 127.0.0.1 - - [11/Sep/2022 14:27:37] "GET / HTTP/1.1" 200 -
+02:27:37 PM 127.0.0.1 - - [11/Sep/2022 14:27:37] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:27:44 PM user searched for krish naik and he wants 1 videos
+02:27:44 PM directory /videos reset
+02:27:44 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 42, in success
+    urls = image_URL(name, number_of_videos, download_video)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 58, in image_URL
+    driver = webdriver.Chrome(service=ser, options=op)
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\chromium\webdriver.py", line 89, in __init__
+    self.service.start()
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\subprocess.py", line 1360, in _execute_child
+    args = list2cmdline(args)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\subprocess.py", line 565, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\os.py", line 822, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+02:27:45 PM 127.0.0.1 - - [11/Sep/2022 14:27:45] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+02:28:29 PM Some visited website
+02:28:29 PM 127.0.0.1 - - [11/Sep/2022 14:28:29] "GET / HTTP/1.1" 200 -
+02:28:30 PM 127.0.0.1 - - [11/Sep/2022 14:28:30] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:28:36 PM user searched for krish naik and he wants 1 videos
+02:28:36 PM directory /videos reset
+02:29:11 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000001A5B3B01430>
+02:29:11 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+02:29:12 PM MongoClient(host=['ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+02:29:12 PM Data stored in mongoDB krish_naik
+02:29:12 PM 127.0.0.1 - - [11/Sep/2022 14:29:12] "POST /success HTTP/1.1" 200 -

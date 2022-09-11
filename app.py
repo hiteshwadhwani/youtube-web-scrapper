@@ -49,7 +49,7 @@ def success():
 
 
 def image_URL(name_to_search, number_of_links, download_video):
-    ser = Service("chromedriver.exe")
+    ser = Service(os.environ.get("CHROMEDRIVER_PATH"))
     op = webdriver.ChromeOptions()
     op.add_argument("--headless")
     op.add_argument("--disable-dev-shm-usage")
