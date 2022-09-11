@@ -29,6 +29,17 @@ def hello_world():
     return render_template("home.html")
 
 
+
+# def success():
+#     name = request.form['content']
+#     number_of_videos = int(request.form['number'])
+#     sql_username = request.form['sql-username']
+#     sql_password = request.form['sql-password']
+
+    # retrieve data from mongoDB
+
+
+
 @app.route('/success', methods=['POST'])
 def success():
     if request.method == 'POST':
@@ -36,24 +47,19 @@ def success():
         number_of_videos = int(request.form['number'])
         sql_username = request.form['sql-username']
         sql_password = request.form['sql-password']
-        download_video = request.form.get("video")
         logging_file.info(f"user searched for {name} and he wants {number_of_videos} videos")
         handle_S3_videos.reset_directory()
-        urls = image_URL(name, number_of_videos, download_video)
+        urls = image_URL(name, number_of_videos)
         print("length of urls ", len(urls))
         save_to_sql(sql_username, sql_password, urls, name.replace(" ", "_"))
         # return jsonify(str(urls))
 
         return render_template("success.html", list_data=urls)
-        # return 'hello world'
 
 
-def image_URL(name_to_search, number_of_links, download_video):
+def image_URL(name_to_search, number_of_links):
     ser = Service(os.environ.get("CHROMEDRIVER_PATH"))
     op = webdriver.ChromeOptions()
-    op.add_argument("--headless")
-    op.add_argument("--disable-dev-shm-usage")
-    op.add_argument("--no-sandbox")
     op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
     driver = webdriver.Chrome(service=ser, options=op)
     url = "https://www.youtube.com/results?search_query={}"
@@ -61,8 +67,8 @@ def image_URL(name_to_search, number_of_links, download_video):
     driver.get(url.format(name))
     time.sleep(5)
     user_url = driver.find_element(By.ID, "main-link").get_attribute("href")
-    time.sleep(5)
     driver.get(user_url + "/videos")
+    time.sleep(3)
 
     def scroll_down():
         wait = WebDriverWait(driver, 1)
@@ -89,11 +95,12 @@ def image_URL(name_to_search, number_of_links, download_video):
 
     information = []
     for link in list(links1)[0:number_of_links]:
-        information.append(get_video_information(link, driver, download_video))
+        information.append(get_video_information(link, driver))
     return information
 
 
-def get_video_information(url: str, driver: webdriver, download_video):
+def get_video_information(url: str, driver: webdriver):
+    global comment_count, likes, title, comments
     driver.get(url)
 
     wait = WebDriverWait(driver, 1)
@@ -107,44 +114,50 @@ def get_video_information(url: str, driver: webdriver, download_video):
             time.sleep(1)
 
     scroll_to_end()
+    time.sleep(5)
 
     # title of the video
-    title = wait.until(
-        EC.presence_of_element_located((By.XPATH, '//*[@id="container"]/h1/yt-formatted-string'))).get_attribute(
-        "innerText")
-    time.sleep(1)
+    try:
+        title = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="container"]/h1/yt-formatted-string'))).get_attribute("innerText")
+    except:
+        pass
 
     # Likes of the video
     # likes = driver.find_element(By.XPATH, '//*[@id="top-level-buttons-computed"]/ytd-toggle-button-renderer[1]/a').text
-    likes = wait.until(EC.presence_of_element_located(
-        (By.XPATH, '//*[@id="top-level-buttons-computed"]/ytd-toggle-button-renderer[1]/a'))).text
-    time.sleep(1)
+    try:
+        likes = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="top-level-buttons-computed"]/ytd-toggle-button-renderer[1]/a'))).text
+    except:
+        pass
 
     # number of comments on the video
     # comment_count = (driver.find_element(By.XPATH, '//*[@id="count"]/yt-formatted-string/span[1]')).text
-    comment_count = wait.until(
-        EC.presence_of_element_located((By.XPATH, '//*[@id="count"]/yt-formatted-string/span[1]'))).text
-    time.sleep(1)
+    try:
+        comment_count = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="count"]/yt-formatted-string/span[1]'))).text
+    except:
+        pass
 
     # Comments on the video
-    commentNew = driver.find_elements(By.XPATH, '//*[@id="body"]')
-    comments = []
-    for i in commentNew:
-        comments.append({"name": i.find_element(By.CSS_SELECTOR, '#header-author > h3').text,
-                         "comment": i.find_element(By.ID, 'comment-content').text})
+    try:
+        commentNew = driver.find_elements(By.XPATH, '//*[@id="body"]')
+        comments = []
+        for i in commentNew:
+            comments.append({"name": i.find_element(By.CSS_SELECTOR, '#header-author > h3').text,"comment": i.find_element(By.ID, 'comment-content').text})
+    except:
+        pass
 
     # Download video and upload in S3 Bucket and create URL
-    if download_video is not None:
-        video_s3_URL = handle_S3_videos.handle_videos(url, title)
-    else:
-        video_s3_URL = 'None'
+    # if download_video is not None:
+    #     video_s3_URL = handle_S3_videos.handle_videos(url, title)
+    # else:
+    #     video_s3_URL = 'None'
 
     details = {'url': url, "title": title, "likes": likes, "number_of_comments": comment_count,
                'thumbnail': f'http://img.youtube.com/vi/{urlparse(url).query[2::]}/maxresdefault.jpg',
-               'S3_Bucket_URL': video_s3_URL,
                "comments": comments}
 
     return details
+
+
 
 
 if __name__ == '__main__':
