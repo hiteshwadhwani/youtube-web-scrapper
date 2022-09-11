@@ -110,3 +110,28 @@ Backtrace:
 01:00:47 PM MongoClient(host=['ineuron-shard-00-01.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
 01:00:47 PM Data stored in mongoDB krish_naik
 01:00:47 PM 127.0.0.1 - - [11/Sep/2022 13:00:47] "POST /success HTTP/1.1" 200 -
+02:00:24 PM Some visited website
+02:00:24 PM 127.0.0.1 - - [11/Sep/2022 14:00:24] "GET / HTTP/1.1" 200 -
+02:00:25 PM 127.0.0.1 - - [11/Sep/2022 14:00:25] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:00:32 PM user searched for krish naik and he wants 1 videos
+02:00:32 PM directory /videos reset
+02:01:04 PM Messages From Our Students -Teachers Day@Telusko @MySirG.com @Hitesh Choudhary @Mahatmaji Technical not found S3 Bucket An error occurred (404) when calling the HeadObject operation: Not Found
+02:01:20 PM Video Downloaded for URL https://www.youtube.com/watch?v=58RsdQXG0IA
+02:01:32 PM Messages From Our Students -Teachers Day@Telusko @MySirG.com @Hitesh Choudhary @Mahatmaji Technical.mp4 uploaded in S3 Bucket
+02:01:32 PM URL Created for Messages From Our Students -Teachers Day@Telusko @MySirG.com @Hitesh Choudhary @Mahatmaji Technical.mp4
+02:01:35 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x0000017749350430>
+02:01:36 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+02:01:36 PM MongoClient(host=['ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+02:01:37 PM Data stored in mongoDB krish_naik
+02:01:37 PM 127.0.0.1 - - [11/Sep/2022 14:01:37] "POST /success HTTP/1.1" 200 -
+02:02:07 PM 127.0.0.1 - - [11/Sep/2022 14:02:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+02:07:23 PM Some visited website
+02:07:23 PM 127.0.0.1 - - [11/Sep/2022 14:07:23] "GET / HTTP/1.1" 200 -
+02:07:23 PM 127.0.0.1 - - [11/Sep/2022 14:07:23] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:07:30 PM user searched for krish naik and he wants 1 videos
+02:07:30 PM directory /videos reset
+02:08:02 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000001C619699760>
+02:08:02 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+02:08:03 PM MongoClient(host=['ineuron-shard-00-01.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+02:08:04 PM Data stored in mongoDB krish_naik
+02:08:04 PM 127.0.0.1 - - [11/Sep/2022 14:08:04] "POST /success HTTP/1.1" 200 -
