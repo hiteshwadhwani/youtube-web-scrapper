@@ -63,7 +63,7 @@ def download(id):
 #         return render_template("success.html", list_data=urls)
 
 
-def image_URL(name_to_search, number_of_links, download_video):
+def image_URL(name_to_search, number_of_links):
     ser = Service("chromedriver.exe")
     op = webdriver.ChromeOptions()
     # op.add_argument("--headless")
@@ -105,14 +105,14 @@ def image_URL(name_to_search, number_of_links, download_video):
     information = []
     for link in list(links1)[0:number_of_links]:
         try:
-            data = get_video_information(link, driver, download_video)
+            data = get_video_information(link, driver)
             information.append(data)
         except:
             pass
     return information
 
 
-def get_video_information(url: str, driver: webdriver, download_video):
+def get_video_information(url: str, driver: webdriver):
     global comment_count, likes, title, comments
     driver.get(url)
 
@@ -164,14 +164,11 @@ def get_video_information(url: str, driver: webdriver, download_video):
         pass
 
     # Download video and upload in S3 Bucket and create URL
-    if download_video is not None:
-        video_s3_URL = handle_S3_videos.handle_videos(url, title)
-    else:
-        video_s3_URL = 'None'
+
 
     details = {'url': url, "title": title, "likes": likes, "number_of_comments": comment_count,
                'thumbnail': f'http://img.youtube.com/vi/{urlparse(url).query[2::]}/maxresdefault.jpg',
-               "S3_Bucket_URL": video_s3_URL, "comments": comments, "id": urlparse(url).query[2::]}
+               "S3_Bucket_URL": 'None', "comments": comments, "id": urlparse(url).query[2::]}
 
     return details
 

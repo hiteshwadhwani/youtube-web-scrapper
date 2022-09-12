@@ -76,3 +76,62 @@
 11:33:57 AM 127.0.0.1 - - [12/Sep/2022 11:33:57] "POST /success HTTP/1.1" 200 -
 11:34:07 AM 127.0.0.1 - - [12/Sep/2022 11:34:07] "POST /success HTTP/1.1" 200 -
 11:34:39 AM 127.0.0.1 - - [12/Sep/2022 11:34:39] "POST /success HTTP/1.1" 200 -
+02:21:40 PM Some visited website
+02:21:40 PM 127.0.0.1 - - [12/Sep/2022 14:21:40] "GET / HTTP/1.1" 200 -
+02:21:41 PM 127.0.0.1 - - [12/Sep/2022 14:21:41] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:21:41 PM 127.0.0.1 - - [12/Sep/2022 14:21:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+02:21:51 PM user searched for krish naik and he wants 50 videos
+02:21:51 PM directory /videos reset
+02:21:51 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 57, in success
+    urls = image_URL(name, number_of_videos)
+TypeError: image_URL() missing 1 required positional argument: 'download_video'
+02:21:51 PM 127.0.0.1 - - [12/Sep/2022 14:21:51] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+02:23:25 PM Some visited website
+02:23:25 PM 127.0.0.1 - - [12/Sep/2022 14:23:25] "GET / HTTP/1.1" 200 -
+02:23:26 PM 127.0.0.1 - - [12/Sep/2022 14:23:26] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:23:34 PM user searched for krish naik and he wants 50 videos
+02:23:34 PM directory /videos reset
+02:23:34 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 57, in success
+    urls = image_URL(name, number_of_videos)
+TypeError: image_URL() missing 1 required positional argument: 'download_video'
+02:23:34 PM 127.0.0.1 - - [12/Sep/2022 14:23:34] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+02:25:11 PM Some visited website
+02:25:11 PM 127.0.0.1 - - [12/Sep/2022 14:25:11] "GET / HTTP/1.1" 200 -
+02:25:11 PM 127.0.0.1 - - [12/Sep/2022 14:25:11] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:25:16 PM user searched for krish naik and he wants 50 videos
+02:25:16 PM directory /videos reset
+02:45:36 PM 127.0.0.1 - - [12/Sep/2022 14:45:36] "POST /success HTTP/1.1" 200 -
+02:48:17 PM Some visited website
+02:48:17 PM 127.0.0.1 - - [12/Sep/2022 14:48:17] "GET / HTTP/1.1" 200 -
+02:48:18 PM 127.0.0.1 - - [12/Sep/2022 14:48:18] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:48:25 PM 127.0.0.1 - - [12/Sep/2022 14:48:25] "POST /success HTTP/1.1" 200 -
+02:48:33 PM 127.0.0.1 - - [12/Sep/2022 14:48:33] "POST /success HTTP/1.1" 200 -
+02:48:58 PM Video Downloaded for URL https://www.youtube.com/watch?v=7uLzGRlXXDw
+02:49:05 PM 7uLzGRlXXDw.mp4 uploaded in S3 Bucket
+02:49:05 PM URL Created for 7uLzGRlXXDw.mp4
+02:49:05 PM 127.0.0.1 - - [12/Sep/2022 14:49:05] "GET /download/7uLzGRlXXDw HTTP/1.1" 200 -
+02:49:19 PM 127.0.0.1 - - [12/Sep/2022 14:49:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+02:49:48 PM Video Downloaded for URL https://www.youtube.com/watch?v=WfmFoTKBw90
+02:49:52 PM WfmFoTKBw90.mp4 uploaded in S3 Bucket
+02:49:52 PM URL Created for WfmFoTKBw90.mp4
+02:49:52 PM 127.0.0.1 - - [12/Sep/2022 14:49:52] "GET /download/WfmFoTKBw90 HTTP/1.1" 200 -

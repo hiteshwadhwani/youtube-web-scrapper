@@ -20,9 +20,72 @@
 
     <title>Youtube Web Scrapper</title>
       <style>
+                    body{
+          font-family: 'Nunito', sans-serif;
+        }
+        .card{
+            border-radius: 4px;
+            background: #fff;
+            box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+              transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+          padding: 14px 80px 18px 36px;
+          cursor: pointer;
+        }
+
+        .card:hover{
+             transform: scale(1.05);
+          box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+
+        .card h3{
+          font-weight: 600;
+        }
+
+        .card img{
+          position: absolute;
+          top: 20px;
+          right: 15px;
+          max-height: 120px;
+        }
+
+        .card-1{
+
+              background-repeat: no-repeat;
+            background-position: right;
+            background-size: 80px;
+        }
+
+        .card-2{
+
+              background-repeat: no-repeat;
+            background-position: right;
+            background-size: 80px;
+        }
+
+        .card-3{
+
+              background-repeat: no-repeat;
+            background-position: right;
+            background-size: 80px;
+        }
+
+        @media(max-width: 990px){
+          .card{
+            margin: 20px;
+          }
+        }
           label{
           margin:7px
           }
+          #form{
+          margin: auto;
+          width: 50%;
+
+                }
+         #img-azure{
+         position: absolute;
+            right: 67px;
+         }
       </style>
   </head>
   <body>
@@ -34,13 +97,13 @@
       </div>
       <!-- Jumbotron -->
     </header>
-    <div class="form">
+    <div id="form" class="form">
         <form action="/success" method="POST">
             <div style="margin:10px" class="mb-3">
-                <input style="width:20%" type="text" name="content" class="form-control" placeholder="Enter Youtuber Name">
+                <input type="text" name="content" class="form-control" placeholder="Enter Youtuber Name">
             </div>
             <div style="margin:10px" class="mb-3">
-                <input style="width:20%" type="number" name="number" class="form-control" placeholder="Number of videos">
+                <input type="number" name="number" class="form-control" placeholder="Number of videos">
             </div>
 <!--            <div style="margin:10px" class="mb-3">-->
 <!--                <input style="width:20%" type="text" name="sql-username" class="form-control" placeholder="Enter your SQL username">-->
@@ -55,9 +118,39 @@
 <!--                <span class="toggle-label">Download Video <span style="color:red">(NOTE: THIS IS VERY MUCH TIME TAKING PROCESS)</span></span>-->
 <!--            </label>-->
 <!--            <br>-->
-            <input style="margin:10px" type="submit" class="btn btn-primary" value="Search">
+            <input style="margin-bottom: 30px; margin-left: 400px; padding: 10px" type="submit" class="btn btn-primary" value="Search">
         </form>
-    </div>
+        <div style="text-align: center" class="alert alert-danger" role="alert">
+            NOTE - Please search only Krish naik, hitesh choudhary, sir ji, telusko
+        </div>
+
+        <div style="margin-top:100px" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://github.com/hiteshwadhwani/youtube-web-scrapper">
+                        <div  style="width:250px; height:250px" class="card card-1">
+                        <img id="img-link" src="https://miro.medium.com/max/719/0*LqBi2dONH28oTKVX.png">
+                    </div>
+                    </a>
+                </div>
+            <div class="col-md-4">
+                <a href="Youtubewebscrapper-env.eba-92h9sjn4.ap-south-1.elasticbeanstalk.com">
+                <div style="width:250px; height:250px" class="card card-2">
+                    <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png">
+                  </div>
+                </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                  <div style="width:250px; height:250px" class="card card-3">
+                      <img id="img-azure" src="https://pbs.twimg.com/profile_images/1396904954741231618/vETxSyEd_400x400.jpg">
+                  </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
  <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
