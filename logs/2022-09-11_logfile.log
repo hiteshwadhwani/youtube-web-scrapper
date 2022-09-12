@@ -180,3 +180,422 @@ TypeError: expected str, bytes or os.PathLike object, not NoneType
 02:29:12 PM MongoClient(host=['ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
 02:29:12 PM Data stored in mongoDB krish_naik
 02:29:12 PM 127.0.0.1 - - [11/Sep/2022 14:29:12] "POST /success HTTP/1.1" 200 -
+09:12:29 PM Some visited website
+09:12:29 PM 127.0.0.1 - - [11/Sep/2022 21:12:29] "GET / HTTP/1.1" 200 -
+09:12:30 PM 127.0.0.1 - - [11/Sep/2022 21:12:30] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+09:12:31 PM 127.0.0.1 - - [11/Sep/2022 21:12:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+09:14:07 PM Some visited website
+09:14:07 PM 127.0.0.1 - - [11/Sep/2022 21:14:07] "GET / HTTP/1.1" 200 -
+09:14:07 PM 127.0.0.1 - - [11/Sep/2022 21:14:07] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+09:14:27 PM user searched for krish naik and he wants 10 videos
+09:14:27 PM directory /videos reset
+09:19:20 PM MongoClient(host=['ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+09:19:21 PM Data stored in mongoDB krish_naik
+09:19:21 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000001CEA9719A60>
+09:19:21 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+09:19:22 PM 127.0.0.1 - - [11/Sep/2022 21:19:22] "POST /success HTTP/1.1" 200 -
+09:20:20 PM 127.0.0.1 - - [11/Sep/2022 21:20:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+09:31:32 PM user searched for krish naik and he wants 5 videos
+09:31:32 PM directory /videos reset
+09:32:16 PM Neuro Labs Demo-Dont Worry About High Configuration Laptops @iNeuron Intelligence​ not found S3 Bucket An error occurred (404) when calling the HeadObject operation: Not Found
+09:32:24 PM Video Downloaded for URL https://www.youtube.com/watch?v=dPARXQO8dkw
+09:32:29 PM Neuro Labs Demo-Dont Worry About High Configuration Laptops @iNeuron Intelligence​.mp4 uploaded in S3 Bucket
+09:32:29 PM URL Created for Neuro Labs Demo-Dont Worry About High Configuration Laptops @iNeuron Intelligence​.mp4
+09:32:54 PM Implementing Machine Learninng Pipelines USsing Sklearn And Python not found S3 Bucket An error occurred (404) when calling the HeadObject operation: Not Found
+09:35:00 PM Video Downloaded for URL https://www.youtube.com/watch?v=HZ9MUzCRlzI
+09:35:17 PM Implementing Machine Learninng Pipelines USsing Sklearn And Python.mp4 uploaded in S3 Bucket
+09:35:17 PM URL Created for Implementing Machine Learninng Pipelines USsing Sklearn And Python.mp4
+09:35:41 PM How To Prepare And Overcome Fear In Maths For Data Science- Follow This Approach not found S3 Bucket An error occurred (404) when calling the HeadObject operation: Not Found
+09:35:54 PM Video Downloaded for URL https://www.youtube.com/watch?v=Pp6CO2_YEDE
+09:36:03 PM How To Prepare And Overcome Fear In Maths For Data Science- Follow This Approach.mp4 uploaded in S3 Bucket
+09:36:03 PM URL Created for How To Prepare And Overcome Fear In Maths For Data Science- Follow This Approach.mp4
+09:36:28 PM Neuro Lab Launch Celebration- Live 7PM not found S3 Bucket An error occurred (404) when calling the HeadObject operation: Not Found
+09:36:55 PM Video Downloaded for URL https://www.youtube.com/watch?v=COTMO2sYJh0
+09:37:15 PM Neuro Lab Launch Celebration- Live 7PM.mp4 uploaded in S3 Bucket
+09:37:15 PM URL Created for Neuro Lab Launch Celebration- Live 7PM.mp4
+09:37:41 PM Trackersheet That Can Make You From Zero To HERO In Data Science not found S3 Bucket An error occurred (404) when calling the HeadObject operation: Not Found
+09:37:52 PM Video Downloaded for URL https://www.youtube.com/watch?v=qJJEf6p8xH0
+09:37:57 PM Trackersheet That Can Make You From Zero To HERO In Data Science.mp4 uploaded in S3 Bucket
+09:37:57 PM URL Created for Trackersheet That Can Make You From Zero To HERO In Data Science.mp4
+09:38:00 PM MongoClient(host=['ineuron-shard-00-00.xskip.mongodb.net:27017', 'ineuron-shard-00-02.xskip.mongodb.net:27017', 'ineuron-shard-00-01.xskip.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, retrywrites=True, w='majority', authsource='admin', replicaset='atlas-v2iltd-shard-0', tls=True, tlscafile='C:\\ProgramData\\Anaconda3\\envs\\youtube-scrapper-3.9\\lib\\site-packages\\certifi\\cacert.pem')
+09:38:00 PM Data stored in mongoDB krish_naik
+09:38:01 PM connection established <mysql.connector.connection_cext.CMySQLConnection object at 0x000001CEAA3ED4C0>
+09:38:01 PM Engine(mysql+pymysql://root:***@localhost:3306/youtube_scrapper)
+09:38:02 PM 127.0.0.1 - - [11/Sep/2022 21:38:02] "POST /success HTTP/1.1" 200 -
+09:55:41 PM Some visited website
+09:55:41 PM 127.0.0.1 - - [11/Sep/2022 21:55:41] "GET / HTTP/1.1" 200 -
+09:55:42 PM 127.0.0.1 - - [11/Sep/2022 21:55:42] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+09:56:00 PM user searched for krish naik and he wants 1 videos
+09:56:00 PM directory /videos reset
+09:56:49 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 54, in success
+    file.write(urls)
+TypeError: write() argument must be str, not list
+09:56:49 PM 127.0.0.1 - - [11/Sep/2022 21:56:49] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+09:57:33 PM Some visited website
+09:57:33 PM 127.0.0.1 - - [11/Sep/2022 21:57:33] "GET / HTTP/1.1" 200 -
+09:57:34 PM 127.0.0.1 - - [11/Sep/2022 21:57:34] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+09:57:42 PM user searched for krish naik and he wants 1 videos
+09:57:42 PM directory /videos reset
+09:58:31 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 54, in success
+    file.write(str(urls))
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 1388-1389: character maps to <undefined>
+09:58:31 PM 127.0.0.1 - - [11/Sep/2022 21:58:31] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+10:02:25 PM Some visited website
+10:02:25 PM 127.0.0.1 - - [11/Sep/2022 22:02:25] "GET / HTTP/1.1" 200 -
+10:02:26 PM 127.0.0.1 - - [11/Sep/2022 22:02:26] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:02:33 PM user searched for krish naik and he wants 1 videos
+10:02:33 PM directory /videos reset
+10:03:24 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 54, in success
+    file.write(str(urls))
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 4014-4020: character maps to <undefined>
+10:03:24 PM 127.0.0.1 - - [11/Sep/2022 22:03:24] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+10:05:13 PM Some visited website
+10:05:13 PM 127.0.0.1 - - [11/Sep/2022 22:05:13] "GET / HTTP/1.1" 200 -
+10:05:14 PM 127.0.0.1 - - [11/Sep/2022 22:05:14] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:05:21 PM user searched for krish naik and he wants 1 videos
+10:05:21 PM directory /videos reset
+10:06:08 PM 127.0.0.1 - - [11/Sep/2022 22:06:08] "POST /success HTTP/1.1" 200 -
+10:16:35 PM Some visited website
+10:16:35 PM 127.0.0.1 - - [11/Sep/2022 22:16:35] "GET / HTTP/1.1" 200 -
+10:16:35 PM 127.0.0.1 - - [11/Sep/2022 22:16:35] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:16:46 PM user searched for krish naik and he wants 1 videos
+10:16:46 PM directory /videos reset
+10:17:39 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 55, in success
+    file.write("%s\n", i)
+TypeError: TextIOWrapper.write() takes exactly one argument (2 given)
+10:17:39 PM 127.0.0.1 - - [11/Sep/2022 22:17:39] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+10:18:15 PM user searched for krish naik and he wants 1 videos
+10:18:15 PM directory /videos reset
+10:19:15 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 55, in success
+    file.write("%s\n", i)
+TypeError: TextIOWrapper.write() takes exactly one argument (2 given)
+10:19:15 PM 127.0.0.1 - - [11/Sep/2022 22:19:15] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+10:23:59 PM Some visited website
+10:23:59 PM 127.0.0.1 - - [11/Sep/2022 22:23:59] "GET / HTTP/1.1" 200 -
+10:24:00 PM 127.0.0.1 - - [11/Sep/2022 22:24:00] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:24:10 PM user searched for krish naik and he wants 1 videos
+10:24:10 PM directory /videos reset
+10:24:57 PM 127.0.0.1 - - [11/Sep/2022 22:24:57] "POST /success HTTP/1.1" 200 -
+10:28:38 PM Some visited website
+10:28:38 PM 127.0.0.1 - - [11/Sep/2022 22:28:38] "GET / HTTP/1.1" 200 -
+10:28:38 PM 127.0.0.1 - - [11/Sep/2022 22:28:38] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:28:45 PM user searched for krish naik and he wants 50 videos
+10:28:45 PM directory /videos reset
+10:44:22 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 53, in success
+    urls = image_URL(name, number_of_videos, download_video)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 103, in image_URL
+    information.append(get_video_information(link, driver, download_video))
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 109, in get_video_information
+    driver.get(url)
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'url' must be a string
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E978B3+2193587]
+	Ordinal0 [0x00E30681+1771137]
+	Ordinal0 [0x00D441A8+803240]
+	Ordinal0 [0x00D9E256+1172054]
+	Ordinal0 [0x00D8D7AC+1103788]
+	Ordinal0 [0x00D9DAE2+1170146]
+	Ordinal0 [0x00D8D5C6+1103302]
+	Ordinal0 [0x00D677E0+948192]
+	Ordinal0 [0x00D686E6+952038]
+	GetHandleVerifier [0x01140CB2+2738370]
+	GetHandleVerifier [0x011321B8+2678216]
+	GetHandleVerifier [0x00F217AA+512954]
+	GetHandleVerifier [0x00F20856+509030]
+	Ordinal0 [0x00E3743B+1799227]
+	Ordinal0 [0x00E3BB68+1817448]
+	Ordinal0 [0x00E3BC55+1817685]
+	Ordinal0 [0x00E45230+1856048]
+	BaseThreadInitThunk [0x75C46739+25]
+	RtlGetFullPathName_UEx [0x77A790AF+1215]
+	RtlGetFullPathName_UEx [0x77A7907D+1165]
+
+10:44:22 PM 127.0.0.1 - - [11/Sep/2022 22:44:22] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+10:51:35 PM Some visited website
+10:51:35 PM 127.0.0.1 - - [11/Sep/2022 22:51:35] "GET / HTTP/1.1" 200 -
+10:51:36 PM 127.0.0.1 - - [11/Sep/2022 22:51:36] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:51:44 PM user searched for krish naik and he wants 50 videos
+10:51:44 PM directory /videos reset
+10:58:58 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 53, in success
+    urls = image_URL(name, number_of_videos, download_video)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 103, in image_URL
+    information.append(get_video_information(link, driver, download_video))
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 109, in get_video_information
+    driver.get(url)
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\hitesh wadhwani\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E978B3+2193587]
+	Ordinal0 [0x00E30681+1771137]
+	Ordinal0 [0x00D44070+802928]
+	Ordinal0 [0x00D37596+750998]
+	Ordinal0 [0x00D360A5+745637]
+	Ordinal0 [0x00D3636D+746349]
+	Ordinal0 [0x00D45974+809332]
+	Ordinal0 [0x00D9E18D+1171853]
+	Ordinal0 [0x00D8D7AC+1103788]
+	Ordinal0 [0x00D9DAE2+1170146]
+	Ordinal0 [0x00D8D5C6+1103302]
+	Ordinal0 [0x00D677E0+948192]
+	Ordinal0 [0x00D686E6+952038]
+	GetHandleVerifier [0x01140CB2+2738370]
+	GetHandleVerifier [0x011321B8+2678216]
+	GetHandleVerifier [0x00F217AA+512954]
+	GetHandleVerifier [0x00F20856+509030]
+	Ordinal0 [0x00E3743B+1799227]
+	Ordinal0 [0x00E3BB68+1817448]
+	Ordinal0 [0x00E3BC55+1817685]
+	Ordinal0 [0x00E45230+1856048]
+	BaseThreadInitThunk [0x75C46739+25]
+	RtlGetFullPathName_UEx [0x77A790AF+1215]
+	RtlGetFullPathName_UEx [0x77A7907D+1165]
+
+10:58:58 PM 127.0.0.1 - - [11/Sep/2022 22:58:58] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+11:05:19 PM Some visited website
+11:05:19 PM 127.0.0.1 - - [11/Sep/2022 23:05:19] "GET / HTTP/1.1" 200 -
+11:05:20 PM 127.0.0.1 - - [11/Sep/2022 23:05:20] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:05:29 PM user searched for krish naik and he wants 40 videos
+11:05:29 PM directory /videos reset
+11:22:03 PM 127.0.0.1 - - [11/Sep/2022 23:22:03] "POST /success HTTP/1.1" 200 -
+11:46:50 PM Some visited website
+11:46:50 PM 127.0.0.1 - - [11/Sep/2022 23:46:50] "GET / HTTP/1.1" 200 -
+11:46:50 PM 127.0.0.1 - - [11/Sep/2022 23:46:50] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:50:41 PM Some visited website
+11:50:41 PM 127.0.0.1 - - [11/Sep/2022 23:50:41] "GET / HTTP/1.1" 200 -
+11:50:42 PM 127.0.0.1 - - [11/Sep/2022 23:50:42] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:50:50 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 37, in success
+    df = pd.read_json(f"./files/{name}.json")
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\util\_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 612, in read_json
+    return json_reader.read()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 746, in read
+    obj = self._get_object_parser(self.data)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 768, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 880, in parse
+    self._parse_no_numpy()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 1133, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value
+11:50:50 PM 127.0.0.1 - - [11/Sep/2022 23:50:50] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+11:51:31 PM Some visited website
+11:51:31 PM 127.0.0.1 - - [11/Sep/2022 23:51:31] "GET / HTTP/1.1" 200 -
+11:51:32 PM 127.0.0.1 - - [11/Sep/2022 23:51:32] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:51:37 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 40, in success
+    df = pd.read_json(f"./files/{name}.json")
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\util\_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 612, in read_json
+    return json_reader.read()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 746, in read
+    obj = self._get_object_parser(self.data)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 768, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 880, in parse
+    self._parse_no_numpy()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\pandas\io\json\_json.py", line 1133, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value
+11:51:37 PM 127.0.0.1 - - [11/Sep/2022 23:51:37] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+11:53:18 PM Some visited website
+11:53:18 PM 127.0.0.1 - - [11/Sep/2022 23:53:18] "GET / HTTP/1.1" 200 -
+11:53:18 PM 127.0.0.1 - - [11/Sep/2022 23:53:18] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:53:27 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 42, in success
+    return render_template("success1.html", list_data=df.values.tolist())
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\templates\success1.html", line 50, in template
+    <td><img style="width:200px; height:150px" src="{{4]}}"></td>
+jinja2.exceptions.TemplateSyntaxError: unexpected ']'
+11:53:27 PM 127.0.0.1 - - [11/Sep/2022 23:53:27] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+11:56:33 PM Some visited website
+11:56:33 PM 127.0.0.1 - - [11/Sep/2022 23:56:33] "GET / HTTP/1.1" 200 -
+11:56:34 PM 127.0.0.1 - - [11/Sep/2022 23:56:34] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:56:41 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 42, in success
+    return render_template("success1.html", list_data=df.values.tolist())
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\templates\success1.html", line 55, in template
+    <!--              <td><img style="width:200px; height:150px" src="{{4]}}"></td>-->
+jinja2.exceptions.TemplateSyntaxError: unexpected ']'
+11:56:41 PM 127.0.0.1 - - [11/Sep/2022 23:56:41] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+11:57:36 PM Some visited website
+11:57:36 PM 127.0.0.1 - - [11/Sep/2022 23:57:36] "GET / HTTP/1.1" 200 -
+11:57:37 PM 127.0.0.1 - - [11/Sep/2022 23:57:37] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:57:45 PM 127.0.0.1 - - [11/Sep/2022 23:57:45] "POST /success HTTP/1.1" 200 -
+11:59:36 PM Some visited website
+11:59:36 PM 127.0.0.1 - - [11/Sep/2022 23:59:36] "GET / HTTP/1.1" 200 -
+11:59:36 PM 127.0.0.1 - - [11/Sep/2022 23:59:36] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:59:40 PM Exception on /success [POST]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ProgramData\Anaconda3\envs\youtube-scrapper-3.9\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hitesh wadhwani\PycharmProjects\youtube-scrapper-3.9\app.py", line 36, in success
+    number_of_videos = int(request.form['number'])
+ValueError: invalid literal for int() with base 10: ''
+11:59:40 PM 127.0.0.1 - - [11/Sep/2022 23:59:40] "[35m[1mPOST /success HTTP/1.1[0m" 500 -
+11:59:47 PM 127.0.0.1 - - [11/Sep/2022 23:59:47] "POST /success HTTP/1.1" 200 -

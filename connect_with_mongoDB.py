@@ -50,3 +50,10 @@ def handle_data_mongoDB(data, table_name):
         logging_file.info(f"Data stored in mongoDB {table_name}")
     except Exception as e:
         logging_file.error(f"Exception with mongoDB {e}")
+
+
+# data = list(find_data("krish_naik"))
+# data[0].pop("_id")
+# df = pd.DataFrame.from_records(data[0])
+# print(df.values.tolist())
+# final_data = df.values.tolist()

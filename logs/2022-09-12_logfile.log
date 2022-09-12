@@ -1,0 +1,78 @@
+12:22:48 AM Some visited website
+12:22:48 AM 127.0.0.1 - - [12/Sep/2022 00:22:48] "GET / HTTP/1.1" 200 -
+12:22:49 AM 127.0.0.1 - - [12/Sep/2022 00:22:49] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+12:23:01 AM 127.0.0.1 - - [12/Sep/2022 00:23:01] "[33mGET /test/https://www.youtube.com/watch?v=gFV-bt7THmA HTTP/1.1[0m" 404 -
+12:23:29 AM 127.0.0.1 - - [12/Sep/2022 00:23:29] "[33mGET /test/https:/gFV-bt7THmA HTTP/1.1[0m" 404 -
+12:23:33 AM 127.0.0.1 - - [12/Sep/2022 00:23:33] "GET /test/gFV-bt7THmA HTTP/1.1" 200 -
+12:36:41 AM Some visited website
+12:36:41 AM 127.0.0.1 - - [12/Sep/2022 00:36:41] "GET / HTTP/1.1" 200 -
+12:36:41 AM 127.0.0.1 - - [12/Sep/2022 00:36:41] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+12:37:00 AM 127.0.0.1 - - [12/Sep/2022 00:37:00] "[33mGET /test/gFV-bt7THmA?title=Indian%20EdTech%20platforms%20are%20scamming%20you HTTP/1.1[0m" 404 -
+12:42:40 AM Some visited website
+12:42:40 AM 127.0.0.1 - - [12/Sep/2022 00:42:40] "GET / HTTP/1.1" 200 -
+12:42:40 AM 127.0.0.1 - - [12/Sep/2022 00:42:40] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+12:42:52 AM 127.0.0.1 - - [12/Sep/2022 00:42:52] "[33mGET /test/gFV-bt7THmA HTTP/1.1[0m" 404 -
+12:43:24 AM Video Downloaded for URL https://www.youtube.com/watch?v=gFV-bt7THmA
+12:43:30 AM gFV-bt7THmA.mp4 uploaded in S3 Bucket
+12:43:30 AM URL Created for gFV-bt7THmA.mp4
+12:43:30 AM 127.0.0.1 - - [12/Sep/2022 00:43:30] "GET /download/gFV-bt7THmA HTTP/1.1" 200 -
+02:40:34 AM Some visited website
+02:40:34 AM 127.0.0.1 - - [12/Sep/2022 02:40:34] "GET / HTTP/1.1" 200 -
+02:40:35 AM 127.0.0.1 - - [12/Sep/2022 02:40:35] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+02:40:35 AM 127.0.0.1 - - [12/Sep/2022 02:40:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+02:44:09 AM user searched for hitesh choudhary and he wants 40 videos
+02:44:09 AM directory /videos reset
+03:00:40 AM 127.0.0.1 - - [12/Sep/2022 03:00:40] "POST /success HTTP/1.1" 200 -
+03:02:59 AM Some visited website
+03:02:59 AM 127.0.0.1 - - [12/Sep/2022 03:02:59] "GET / HTTP/1.1" 200 -
+03:02:59 AM 127.0.0.1 - - [12/Sep/2022 03:02:59] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+03:03:09 AM 127.0.0.1 - - [12/Sep/2022 03:03:09] "POST /success HTTP/1.1" 200 -
+03:03:53 AM Some visited website
+03:03:53 AM 127.0.0.1 - - [12/Sep/2022 03:03:53] "GET / HTTP/1.1" 200 -
+03:03:54 AM 127.0.0.1 - - [12/Sep/2022 03:03:54] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+03:04:01 AM 127.0.0.1 - - [12/Sep/2022 03:04:01] "POST /success HTTP/1.1" 200 -
+03:07:15 AM 127.0.0.1 - - [12/Sep/2022 03:07:15] "POST /success HTTP/1.1" 200 -
+03:07:28 AM 127.0.0.1 - - [12/Sep/2022 03:07:28] "POST /success HTTP/1.1" 200 -
+03:11:14 AM Some visited website
+03:11:14 AM 127.0.0.1 - - [12/Sep/2022 03:11:14] "GET / HTTP/1.1" 200 -
+03:11:15 AM 127.0.0.1 - - [12/Sep/2022 03:11:15] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+03:11:19 AM 127.0.0.1 - - [12/Sep/2022 03:11:19] "POST /success HTTP/1.1" 200 -
+03:11:23 AM Video Downloaded for URL https://www.youtube.com/watch?v=_gg5_gFP0gQ
+03:11:27 AM _gg5_gFP0gQ.mp4 uploaded in S3 Bucket
+03:11:27 AM URL Created for _gg5_gFP0gQ.mp4
+03:11:27 AM 127.0.0.1 - - [12/Sep/2022 03:11:27] "GET /download/_gg5_gFP0gQ HTTP/1.1" 200 -
+10:03:57 AM Some visited website
+10:03:57 AM 127.0.0.1 - - [12/Sep/2022 10:03:57] "GET / HTTP/1.1" 200 -
+10:03:58 AM 127.0.0.1 - - [12/Sep/2022 10:03:58] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:03:58 AM 127.0.0.1 - - [12/Sep/2022 10:03:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10:04:10 AM user searched for telusko and he wants 50 videos
+10:04:10 AM directory /videos reset
+10:24:11 AM 127.0.0.1 - - [12/Sep/2022 10:24:11] "POST /success HTTP/1.1" 200 -
+10:36:38 AM Some visited website
+10:36:38 AM 127.0.0.1 - - [12/Sep/2022 10:36:38] "GET / HTTP/1.1" 200 -
+10:36:39 AM 127.0.0.1 - - [12/Sep/2022 10:36:39] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:37:00 AM user searched for telusko and he wants 45 videos
+10:37:00 AM directory /videos reset
+10:54:59 AM 127.0.0.1 - - [12/Sep/2022 10:54:59] "POST /success HTTP/1.1" 200 -
+10:59:40 AM Some visited website
+10:59:40 AM 127.0.0.1 - - [12/Sep/2022 10:59:40] "GET / HTTP/1.1" 200 -
+10:59:41 AM 127.0.0.1 - - [12/Sep/2022 10:59:41] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+10:59:51 AM 127.0.0.1 - - [12/Sep/2022 10:59:51] "POST /success HTTP/1.1" 200 -
+11:00:10 AM Video Downloaded for URL https://www.youtube.com/watch?v=AZb1wLIQ1R4
+11:00:16 AM AZb1wLIQ1R4.mp4 uploaded in S3 Bucket
+11:00:16 AM URL Created for AZb1wLIQ1R4.mp4
+11:00:16 AM 127.0.0.1 - - [12/Sep/2022 11:00:16] "GET /download/AZb1wLIQ1R4 HTTP/1.1" 200 -
+11:02:58 AM Some visited website
+11:02:58 AM 127.0.0.1 - - [12/Sep/2022 11:02:58] "GET / HTTP/1.1" 200 -
+11:02:59 AM 127.0.0.1 - - [12/Sep/2022 11:02:59] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:03:21 AM user searched for sir ji and he wants 50 videos
+11:03:21 AM directory /videos reset
+11:24:34 AM 127.0.0.1 - - [12/Sep/2022 11:24:34] "POST /success HTTP/1.1" 200 -
+11:33:30 AM Some visited website
+11:33:30 AM 127.0.0.1 - - [12/Sep/2022 11:33:30] "GET / HTTP/1.1" 200 -
+11:33:30 AM 127.0.0.1 - - [12/Sep/2022 11:33:30] "[36mGET /static/css/button.css HTTP/1.1[0m" 304 -
+11:33:35 AM 127.0.0.1 - - [12/Sep/2022 11:33:35] "POST /success HTTP/1.1" 200 -
+11:33:48 AM 127.0.0.1 - - [12/Sep/2022 11:33:48] "POST /success HTTP/1.1" 200 -
+11:33:57 AM 127.0.0.1 - - [12/Sep/2022 11:33:57] "POST /success HTTP/1.1" 200 -
+11:34:07 AM 127.0.0.1 - - [12/Sep/2022 11:34:07] "POST /success HTTP/1.1" 200 -
+11:34:39 AM 127.0.0.1 - - [12/Sep/2022 11:34:39] "POST /success HTTP/1.1" 200 -

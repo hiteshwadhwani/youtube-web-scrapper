@@ -1,3 +1,4 @@
+import pandas as pd
 from flask import Flask, render_template, request, jsonify, url_for
 from flask_cors import CORS, cross_origin
 from selenium.webdriver.support.ui import WebDriverWait
@@ -29,39 +30,45 @@ def hello_world():
     logging_file.info("Some visited website")
     return render_template("home.html")
 
-
-# def success():
-#     name = request.form['content']
-#     number_of_videos = int(request.form['number'])
-#     sql_username = request.form['sql-username']
-#     sql_password = request.form['sql-password']
-
-# retrieve data from mongoDB
-
-
 @app.route('/success', methods=['POST'])
 def success():
-    if request.method == 'POST':
-        name = request.form['content']
-        number_of_videos = int(request.form['number'])
-        # sql_username = request.form['sql-username']
-        # sql_password = request.form['sql-password']
-        download_video = request.form.get("video")
-        logging_file.info(f"user searched for {name} and he wants {number_of_videos} videos")
-        handle_S3_videos.reset_directory()
-        urls = image_URL(name, number_of_videos, download_video)
-        print("length of urls ", len(urls))
-        handle_data_mongoDB(urls, name.replace(" ", "_"))
-        # save_to_sql(sql_username, sql_password, urls, name.replace(" ", "_"))
-        return render_template("success.html", list_data=urls)
+    name = request.form['content']
+    number_of_videos = int(request.form['number'])
+    df = pd.read_json(f"./files/{name.replace(' ','_')}.json")
+    return render_template("success1.html", list_data=df.values.tolist()[:number_of_videos])
+
+@app.route("/download/<id>")
+def download(id):
+    url = f"https://www.youtube.com/watch?v={id}"
+    link = handle_S3_videos.handle_videos(url)
+    return f"<a href={link}>Video URL</a>"
+
+
+# @app.route('/success', methods=['POST'])
+# def success():
+#     if request.method == 'POST':
+#         name = request.form['content']
+#         number_of_videos = int(request.form['number'])
+#         # sql_username = request.form['sql-username']
+#         # sql_password = request.form['sql-password']
+#         # download_video = request.form.get("video")
+#         logging_file.info(f"user searched for {name} and he wants {number_of_videos} videos")
+#         handle_S3_videos.reset_directory()
+#         urls = image_URL(name, number_of_videos)
+#         df = pd.DataFrame(urls)
+#         df.to_json(f"./files/{name.replace(' ','_')}.json", indent=False)
+#         print("length of urls ", len(urls))
+#         # handle_data_mongoDB(urls, name.replace(" ", "_"))
+#         # save_to_sql(sql_username, sql_password, urls, name.replace(" ", "_"))
+#         return render_template("success.html", list_data=urls)
 
 
 def image_URL(name_to_search, number_of_links, download_video):
-    ser = Service(os.environ.get("CHROMEDRIVER_PATH"))
+    ser = Service("chromedriver.exe")
     op = webdriver.ChromeOptions()
-    op.add_argument("--headless")
-    op.add_argument("--disable-dev-shm-usage")
-    op.add_argument("--no-sandbox")
+    # op.add_argument("--headless")
+    # op.add_argument("--disable-dev-shm-usage")
+    # op.add_argument("--no-sandbox")
     op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
     driver = webdriver.Chrome(service=ser, options=op)
     url = "https://www.youtube.com/results?search_query={}"
@@ -82,14 +89,14 @@ def image_URL(name_to_search, number_of_links, download_video):
     links1 = set()
     for i in links:
         if 'shorts' not in str(i.get_attribute("href")):
-            links1.add(i.get_attribute("href"))
+            links1.add(str(i.get_attribute("href")))
     if len(links1) < number_of_links:
         while True:
             scroll_down()
             links = driver.find_elements(By.ID, "thumbnail")
             for i in links:
                 if 'shorts' not in str(i.get_attribute("href")):
-                    links1.add(i.get_attribute("href"))
+                    links1.add(str(i.get_attribute("href")))
 
             # base condition where loop will break else it will scroll down and append links
             if len(links1) >= number_of_links:
@@ -97,7 +104,11 @@ def image_URL(name_to_search, number_of_links, download_video):
 
     information = []
     for link in list(links1)[0:number_of_links]:
-        information.append(get_video_information(link, driver, download_video))
+        try:
+            data = get_video_information(link, driver, download_video)
+            information.append(data)
+        except:
+            pass
     return information
 
 
@@ -160,7 +171,7 @@ def get_video_information(url: str, driver: webdriver, download_video):
 
     details = {'url': url, "title": title, "likes": likes, "number_of_comments": comment_count,
                'thumbnail': f'http://img.youtube.com/vi/{urlparse(url).query[2::]}/maxresdefault.jpg',
-               "S3_Bucket_URL": video_s3_URL, "comments": comments}
+               "S3_Bucket_URL": video_s3_URL, "comments": comments, "id": urlparse(url).query[2::]}
 
     return details
 
