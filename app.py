@@ -21,15 +21,16 @@ from connect_with_mongoDB import handle_data_mongoDB
 
 app = Flask(__name__)
 
-
+# home page route
 @app.route('/', methods=['GET', 'POSt'])
 @cross_origin()
-def hello_world():
+def home():
     logging_file.config()
     config.configure()
     logging_file.info("Some visited website")
     return render_template("home.html")
 
+# success page route for VERSION:2 (This route will only show scrapped data from JSON file) (USED IN DEPLOYED VERSION)
 @app.route('/success', methods=['POST'])
 def success():
     name = request.form['content']
@@ -43,7 +44,7 @@ def download(id):
     link = handle_S3_videos.handle_videos(url)
     return f"<a href={link}>Video URL</a>"
 
-
+# Success page route for VERSION:1 (This route can scrape any youtubers data)(Will ony work in local system)
 # @app.route('/success', methods=['POST'])
 # def success():
 #     if request.method == 'POST':
@@ -51,7 +52,6 @@ def download(id):
 #         number_of_videos = int(request.form['number'])
 #         # sql_username = request.form['sql-username']
 #         # sql_password = request.form['sql-password']
-#         # download_video = request.form.get("video")
 #         logging_file.info(f"user searched for {name} and he wants {number_of_videos} videos")
 #         handle_S3_videos.reset_directory()
 #         urls = image_URL(name, number_of_videos)

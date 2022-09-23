@@ -51,7 +51,8 @@
 <!--              <td>{{td['thumbnail']}}</td>-->
               <td>
                 {% if td['S3_Bucket_URL'] == 'None' %}
-                <span class="badge rounded-pill badge-warning">Link Not Generated</span>
+                <a style="color:red" href="/download/{{td['id']}}">Video URL</a>
+<!--                <span class="badge rounded-pill badge-warning">Link Not Generated</span>-->
                 {% else %}
                 <a style="color:red" href="{{td['S3_Bucket_URL']}}">Click To Download video from S3 Bucket</a>
                 {% endif %}
